@@ -34,6 +34,8 @@ Design Points and Action Items
 
  - Improve search buttons and provide multiple ways 
 
+ - Handle Screen orientation
+
 
 = Tools =
 

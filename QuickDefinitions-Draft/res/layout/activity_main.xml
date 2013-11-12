@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout" >
+    
+    <AutoCompleteTextView
+        android:id="@+id/query_edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter your search"
+        android:imeActionLabel="Search"
+        android:singleLine="true"
+        android:text="" 
+        android:focusable="true"
+        android:completionThreshold="1">
+        
+    </AutoCompleteTextView>
+
+    <WebView
+        android:id="@+id/collapsibleWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:layout_below="@+id/query_edit_text_view" 
+        android:focusable="true"
+         />
+
+    <com.quantumleap.quicklookup.CustomViewPager
+        android:id="@+id/search_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query_edit_text_view" 
+        android:focusable="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+Get definitions instantly without blocking your current work !
